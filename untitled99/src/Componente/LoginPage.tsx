@@ -53,10 +53,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLogin, setSignUpVisible }) 
     };
 
     return (
-        <Layout style={{ minHeight: '100vh', background: 'linear-gradient(to right, #222831, #35374B)' }}>
+        <Layout style={{ minHeight: '100vh', background:'linear-gradient(to right, #B31312, #2B2A4C)' }}>
             <Header style={{ textAlign: 'center', color: '#FF204E', fontSize: '38px' }}>Login</Header>
             <Content style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 'calc(100vh - 52px)' }}>
-                <div style={{ width: '300px', background: '#76ABAE', padding: '60px', borderRadius: '40px', boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)' }}>
+                <div style={{ width: '300px', background:'linear-gradient(to top, #10439F, #F27BBD)' , padding: '60px', borderRadius: '40px', boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)' }}>
                     <Form
                         name="login"
                         initialValues={{ remember: true, username, password }} // Utilizăm valorile stocate în state-ul componentei

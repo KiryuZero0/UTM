@@ -1,3 +1,4 @@
+//Layout.tsx
 import React, { useState, useEffect } from 'react';
 import { Layout, Menu, Card, Form, Input, Button, Typography, Space, Modal } from 'antd';
 import { observer } from 'mobx-react';
@@ -5,7 +6,7 @@ import { useCardStore } from '../Componente/CardStore';
 import { myObject } from '../Componente/Fisier';
 import LoginPage from '../Componente/LoginPage';
 import SignUpPage from '../Componente/SignUpPage'; // Importăm SignUpPage
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 const { Header, Content, Footer } = Layout;
 const { Text } = Typography;
 
@@ -21,7 +22,7 @@ interface FormValues {
 
 // Definim lista de utilizatori cu tipul User
 const users: User[] = [
-    { username: 'Octavian', password: 'octavian5' },
+    { username: 'Bob', password: '1234' },
     // Adaugăm alți utilizatori aici
 ];
 
@@ -155,9 +156,12 @@ const MyLayout: React.FC = () => {
                 <div className="site-layout-content">
                     {currentPage === 'Login' && <LoginPage handleLogin={handleLogin} setSignUpVisible={setSignUpVisible} />}
                     {currentPage === 'Acasa' && (
-                        <div style={{ marginTop: '50vh', transform: 'translateY(-50%)' }}>
+                        <div style={{marginTop: '50vh', transform: 'translateY(-50%)'}}>
                             <h1>Lefter Sergiu-Dan</h1>
                             <h2>CR-222</h2>
+                            <h3>Anul 2</h3>
+                            <h3>Disciplina TWEB</h3>
+                            <h3>Laboratorele de la 3 pana la 7</h3>
                         </div>
                     )}
                     {currentPage === 'Carduri' && (
